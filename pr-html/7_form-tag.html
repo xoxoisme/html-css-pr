@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="/signup" method="post">
+      <div class="form-example">
+        <label for="name">이름: </label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div class="form-example">
+        <label for="email">이메일: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="form-example">
+        <input type="submit" value="제출하기" />
+      </div>
+
+      <br />
+
+      <fieldset>
+        <ul>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" id="email" placeholder="이메일 입력해주세요" />
+            <input type="submit" value="제출하기" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>날짜 관련</legend>
+        <ul>
+          <li>
+            <label for="date">날짜</label>
+            <input type="date" id="date" />
+          </li>
+        </ul>
+      </fieldset>
+      <br />
+
+      <ul>
+        <li>
+          <label for="apple">사과</label>
+          <input id="apple" type="checkbox" value="apple" />
+        </li>
+        <li>
+          <label for="orange">오렌지</label>
+          <input id="orange" type="checkbox" value="orange" />
+        </li>
+
+        <br />
+
+        <li>
+          <label for="banana">바나나</label>
+          <input id="banana" type="checkbox" value="banana" />
+        </li>
+      </ul>
+
+      <br />
+
+      <ul>
+        <li>
+          <label for="strawberry">딸기</label>
+          <input type="radio" id="strawberry" name="fruit" value="strawberry" />
+        </li>
+        <li>
+          <label for="watermelon">수박</label>
+          <input type="radio" id="watermelon" name="fruit" value="watermelon" />
+        </li>
+      </ul>
+
+      <br />
+
+      <textarea name="story" id="story" rows="5" cols="33">
+It was a dark and stormy night...
+  </textarea
+      >
+
+      <br />
+
+      <select name="goods" id="goods">
+        <option value="10kg">사과 10kg</option>
+        <option value="20kg" selected>사과 20kg</option>
+        <option value="30kg">사과 30kg</option>
+        <option value="40kg">사과 40kg</option>
+        <option value="50kg">사과 50kg</option>
+      </select>
+
+      <br />
+
+      <label for="ice-cream-choice">맛을 선택하세요</label>
+      <input
+        list="ice-cream-flavor"
+        id="ice-cream-choice"
+        name="ice-cream-choice "
+      />
+      <datalist id="ice-cream-flavor">
+        <option value="Chocolate"></option>
+        <option value="strawberry"></option>
+      </datalist>
+
+      <br />
+
+      <button type="submit">제출하기</button>
+      <button type="reset">초기화</button>
+      <button type="button" onclick="alert('Hello Wordld')">버튼</button>
+    </form>
+  </body>
+</html>
