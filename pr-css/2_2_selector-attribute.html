@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute</title>
+  </head>
+  <style>
+    /* a {
+      color: sandybrown;
+    }
+    a[href] {
+      color: rebeccapurple;
+    } */
+    a[href='https://www.daum.com'] {
+      background-color: blue;
+    }
+    a[href='naver'] {
+      background-color: greenyellow;
+    }
+    a[href^='www'] {
+      background-color: black;
+    }
+  </style>
+  <body>
+    <a href="https://www.naver.com">네이버</a>
+    <a href="https://www.daum.com">다음</a>
+    <a href="www.daum.com">다음</a>
+  </body>
+</html>
